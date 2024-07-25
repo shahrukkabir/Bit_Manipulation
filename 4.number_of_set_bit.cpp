@@ -1,22 +1,19 @@
-
 //count the number of set bits(1s) in the binary representation of a number 
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    int cnt = 0;
-
-    while (n != 0) {
-        if ((n & 1) == 1) {  // Check if the last bit is set
+int main(){
+    int n; cin>>n;
+    int cnt=0;
+    while(n!=0){
+        if((n&1)==1){  //check if the last bit is set
             cnt++;
         }
-        n = n >> 1;  // Right shift n by 1 bit
+        n=n>>1;   //right shift n by 1 bit
     }
-
-    cout << cnt << endl;
+    cout<<cnt<<endl;
 
     return 0;
 }
+
